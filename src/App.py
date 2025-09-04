@@ -54,7 +54,8 @@ else:
                 "subreddit": selected_subreddit
             }
     # final_result= final(selected_coin,selected_currency,selected_subreddit)
-    final_result = app.invoke(initial_state)
+    with st.spinner("Loading today's summary..."):
+        final_result = app.invoke(initial_state)
     # 1. Current Price
     st.subheader(f"💰 Current {final_result['currency']} Price in {final_result['vs_currency'].upper()}:")
     st.metric(label="Price", value=f"{final_result['price']} {final_result['vs_currency'].upper()}")
@@ -72,5 +73,6 @@ else:
     # 3. Today’s Price & News summary
     st.subheader(f"📰 Today's Price & News Summary :")
     st.write(final_result["summary"])
+
 
 

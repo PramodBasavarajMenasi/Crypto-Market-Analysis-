@@ -1,0 +1,7 @@
+llm_huggingface:
+  repo_id : "openai/gpt-oss-20b"
+  task : "text-generation"
+
+llm_perplexity:
+  temperature : "0.7"
+  model : "sonar-pro"

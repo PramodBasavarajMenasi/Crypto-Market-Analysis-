@@ -51,7 +51,7 @@ Developed a **real-time AI-powered crypto market analysis dashboard** that track
 
 ```bash
 # Clone repository
-git clone <your-repo-url>
+git clone https://github.com/PramodBasavarajMenasi/Crypto-Market-Analysis-.git
 cd Crypto_Market_Analysis
 
 # Install dependencies
